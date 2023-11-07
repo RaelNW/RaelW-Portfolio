@@ -10,6 +10,7 @@ import './index.css'
 import Error from './pages/Error.jsx'
 import AboutMe from './pages/AboutMe.jsx'
 import Contact from './pages/Contact.jsx'
+import Resume from './pages/Resume.jsx'
 
 const routes =createBrowserRouter ([
   {
@@ -33,6 +34,10 @@ const routes =createBrowserRouter ([
         path: '*',
         element: <Error />
       },
+      {
+        path: '/resume',
+        element: <Resume />
+      }
     ]
   },
 ]);

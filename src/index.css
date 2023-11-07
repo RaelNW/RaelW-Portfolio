@@ -1,3 +1,4 @@
+/* Base styles for the entire page */
 :root {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -16,6 +17,7 @@
     -webkit-text-size-adjust: 100%;
 }
 
+/* Header styles */
 .header {
     display: flex;
     align-items: center;
@@ -41,6 +43,7 @@
     margin-right: 20px;
 }
 
+/* Links and anchor styles */
 a {
     font-weight: 500;
     color: #16dada;
@@ -52,6 +55,7 @@ a:hover {
     color: #535bf2;
 }
 
+/* Body styles */
 body {
     margin: 0;
     min-width: 320px;
@@ -59,11 +63,13 @@ body {
     background-color: #7579E7;
 }
 
+/* Heading styles */
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
 }
 
+/* Project content section styles */
 .project-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -73,10 +79,11 @@ h1 {
     margin: 0 auto;
 }
 
+/* Project styles */
 .project {
     border: 1px solid #ccc;
     padding: 5px;
-    background-color:#8675A9;
+    background-color: #8675A9;
 }
 
 .project-title {
@@ -97,6 +104,7 @@ h1 {
     margin-top: 10px;
 }
 
+/* Container styles for content */
 .container {
     background-color: #333;
     color: #fff;
@@ -104,6 +112,7 @@ h1 {
     text-align: center;
 }
 
+/* Unstyled list items for the footer */
 .list-unstyled {
     list-style: none;
     padding: 0;
@@ -111,25 +120,25 @@ h1 {
     justify-content: space-evenly;
 }
 
+/* Footer styles */
 .footer {
-        display: flex;
-        align-items: center;
-        background-color: #B9FFFC;
-        text-align: center;
-        padding: 0%;
-        line-height: 0%;
-    }
+    display: flex;
+    align-items: center;
+    background-color: #B9FFFC;
+    text-align: center;
+    padding: 0%;
+    line-height: 0%;
+}
 
-.footer a {
-    color: #1a1a1a;
-    text-decoration: none;
-    font-size: 16px;
+.footer img {
+    max-width: 150px;
 }
 
 .footer a:hover {
     text-decoration: underline;
 }
 
+/* About container styles */
 .about-container {
     background-color: #9AB3F5;
     padding: 20px;
@@ -151,6 +160,7 @@ h1 {
     font-weight: 500;
 }
 
+/* Contact container styles */
 .contact-container {
     background-color: #f48f8f;
     padding: 20px;
@@ -162,9 +172,10 @@ h1 {
     font-size: 24px;
     font-weight: bold;
     margin: 0 0 20px;
-    color: #68B0AB;
+    color : #ffffff;
 }
 
+/* Contact form and input styles */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -193,6 +204,111 @@ h1 {
     background-color: #535bf2;
 }
 
+.contact-info img {
+    max-width: 30px;
+}
+
+/* Container styles for your component content */
+.resume-container {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    min-height: 100vh;
+    /* Set a minimum height of 100% of the viewport height */
+    max-height: 100vh;
+    /* Set a maximum height of 100% of the viewport height */
+    overflow-y: scroll;
+}
+
+.work-history-container { 
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if there's not enough space */
+    justify-content: space-between;
+    /* Space evenly between items */
+    gap: 20px;
+    /* Add some spacing between items */
+
+    }
+
+.job-entry {
+    flex-basis: calc(20% - 10px);
+    /* Calculate width for 2 items with spacing */
+/
+}
+
+.resume-container h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 10px;
+    color:#535bf2;
+    text-align: center;
+}
+
+.resume-container h4 {
+    color:#16dada
+}
+.professional-summary p{
+    flex: 1;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+
+.key-skills {
+    flex: 2;
+    border: 1px solid #ccc;
+
+}
+
+.work-history {
+    flex: 2;
+    border: 1px solid #ccc;
+}
+
+.education-container {
+    text-align: center;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Heading styles for your component content */
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.sub-heading {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.p {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.link {
+    color: #16dada;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.list-item {
+    list-style: none;
+    margin: 0;
+}
+
+/* Media query for light mode */
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;

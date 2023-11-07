@@ -17,6 +17,7 @@ export default function Navigation() {
         <Link key={4} className="nav" to="/project">
           Project
         </Link>,
+        <Link key={5} className='nav' to="/resume">View Resume</Link>
       ]}
     />
   );
