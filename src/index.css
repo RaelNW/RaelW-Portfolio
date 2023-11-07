@@ -1,5 +1,7 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
     line-height: 1.5;
     font-weight: 400;
 
@@ -14,10 +16,36 @@
     -webkit-text-size-adjust: 100%;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #B9FFFC;
+    padding: 1em;
+    text-align: center;
+}
+
+.header-image {
+    max-width: 150px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    line-height: 1.1;
+    color: #1a1a1a;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.nav {
+    margin-right: 20px;
+}
+
 a {
     font-weight: 500;
-    color: #646cff;
+    color: #16dada;
     text-decoration: inherit;
+    justify-content: space-evenly;
 }
 
 a:hover {
@@ -28,11 +56,98 @@ body {
     margin: 0;
     min-width: 320px;
     min-height: 100vh;
+    background-color: #7579E7;
 }
 
 h1 {
     font-size: 3.2em;
     line-height: 1.1;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 9000px;
+    /* Adjust to your desired max width */
+    margin: 0 auto;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color:#8675A9;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project img {
+    max-width: 70%;
+}
+
+.project p {
+    margin-top: 10px;
+}
+
+.project a {
+    display: block;
+    margin-top: 10px;
+}
+
+.container {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer {
+        display: flex;
+        align-items: center;
+        background-color: #B9FFFC;
+        padding: 1em;
+        text-align: center;
+    }
+
+.footer a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.about-container {
+    background-color: #9AB3F5;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.about-h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+}
+
+.about-p {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #1a1a1a;
+    font-weight: 500;
 }
 
 button {
@@ -54,13 +169,6 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-}
-
-.profile-footer {
-    text-align: center;
-    position: fixed;
-    inset: auto 0 0 0;
-    padding: 1em;
 }
 
 @media (prefers-color-scheme: light) {

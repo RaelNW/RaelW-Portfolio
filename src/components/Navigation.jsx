@@ -6,14 +6,15 @@ import Navbar from './UI/Navbar'; // Import the Navbar component
 export default function Navigation() {
   return (
     <Navbar
+    style={{ display: 'flex', justifyContent: 'space-evenly' }}
       links={[
-        <Link key={1} className="nav-link text-light" to="/">
+        <Link key={1} className="nav" to="/">
           AboutMe
         </Link>,
-        <Link key={3} className="nav-link text-light" to="/contact">
+        <Link key={3} className="nav" to="/contact">
           Contact
         </Link>,
-        <Link key={4} className="nav-link text-light" to="/project">
+        <Link key={4} className="nav" to="/project">
           Project
         </Link>,
       ]}

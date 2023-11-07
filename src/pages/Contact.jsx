@@ -37,8 +37,8 @@ function Contact() {
   };
 
   return (
-    <div>
-      <h2>Contact Me</h2>
+    <div className='contact-container'>
+      <h2 className='contact-h2'>Contact Me</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

@@ -47,8 +47,8 @@ function Project({ project }) {
   }
   return (
     <div className="project">
-      <h3>{project.title}</h3>
-      <img src={project.image} alt={project.title} />
+      <h3 className='project-title'>{project.title}</h3>
+      <img src={project.image} alt={project.title} className='project-image'/>
       <p>{project.description}</p>
       <div>
         <a href={project.deployedLink} target="_blank" rel="noopener noreferrer">
