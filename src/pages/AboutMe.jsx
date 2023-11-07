@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../components/Header';
+import { Link } from 'react-router-dom';
+
 
 function AboutMe() {
   return (
-    <div>
-      <Header/> {/* Header component */}
+    <div>/
       <h2>About Me</h2>
       <p>Full Stack Development Student based in Sacramento, CA. 
        I'm on a mission to become a proficient developer. I'm currently pursuing a Full Stack Web Development certificate at UC Davis, 
@@ -14,6 +14,6 @@ function AboutMe() {
     </div>
   );
 }
-
 export default AboutMe;
+
 

@@ -1,18 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from './UI/Navbar'; // Import the Navbar component
 
-function Navigation() {
+
+export default function Navigation() {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
-      </ul>
-    </nav>
+    <Navbar
+      links={[
+        <Link key={1} className="nav-link text-light" to="/">
+          AboutMe
+        </Link>,
+        <Link key={3} className="nav-link text-light" to="/contact">
+          Contact
+        </Link>,
+        <Link key={4} className="nav-link text-light" to="/project">
+          Project
+        </Link>,
+      ]}
+    />
   );
 }
 
-export default Navigation;
 
