@@ -8,7 +8,7 @@ function Project({ title, image, deployedLink, githubLink }) {
       <img src={image} alt={title} />
       <h3>{title}</h3>
       <p>Description of the project goes here.</p>
-      {/* <Link to={`/projects/${title}`}>Details</Link> Link to project details */}
+       <Link to={`/projects/${title}`}>Details</Link> {/*Link to project details */}
       <a href={deployedLink} target="_blank" rel="noopener noreferrer">Deployed App</a>
       <a href={githubLink} target="_blank" rel="noopener noreferrer">GitHub Repository</a>
     </div>

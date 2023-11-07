@@ -5,11 +5,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx'
 import Project from './components/Project.jsx'
 //import 'bootstrap/dist/css/bootstrap.min.css'
-import './index.css'
+// import './index.css'
 
 import Error from './pages/Error.jsx'
 import AboutMe from './pages/AboutMe.jsx'
-import Portfolio from './pages/Portfolio.jsx'
+// import Portfolio from './pages/Portfolio.jsx'
 import Contact from './pages/Contact.jsx'
 
 const routes =createBrowserRouter ([
@@ -22,10 +22,10 @@ const routes =createBrowserRouter ([
         path: '/',
         element: <AboutMe />
       },
-      {
-        path: '/portfolio',
-        element: <Portfolio />
-      },
+      // {
+      //   path: '/portfolio',
+      //   element: <Portfolio />
+      // },
       {
         path: '/contact',
         element: <Contact />
