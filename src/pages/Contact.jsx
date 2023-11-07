@@ -39,7 +39,7 @@ function Contact() {
   return (
     <div className='contact-container'>
       <h2 className='contact-h2'>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='contact-form'>
         <input
           type="text"
           name="name"

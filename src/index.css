@@ -115,8 +115,9 @@ h1 {
         display: flex;
         align-items: center;
         background-color: #B9FFFC;
-        padding: 1em;
         text-align: center;
+        padding: 0%;
+        line-height: 0%;
     }
 
 .footer a {
@@ -150,25 +151,46 @@ h1 {
     font-weight: 500;
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
+.contact-container {
+    background-color: #f48f8f;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    color: #68B0AB;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #8675A9;
+    border-radius: 80px;
+}
+
+.contact-form button {
     background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
-    transition: border-color 0.25s;
+    transition: background-color 0.25s;
 }
 
-button:hover {
-    border-color: #646cff;
-}
-
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+.contact-form button:hover {
+    background-color: #535bf2;
 }
 
 @media (prefers-color-scheme: light) {
