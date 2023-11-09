@@ -15,11 +15,9 @@ To install, clone the repository. Run the Node command `npm i` to install depend
 ## Repo/Deployed
 Repo link : https://github.com/RaelNW/RaelW-Portfolio
 
-Deployed link :
-
+Deployed link : https://main--resplendent-brigadeiros-08b758.netlify.app/
 
 ## License
-
 MIT
 
 ## Name
