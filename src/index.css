@@ -226,6 +226,9 @@ h1 {
     min-height: 100vh;
     /* Set a minimum height of 100% of the viewport height */
     max-height: 100vh;
+    scroll-behavior: smooth;
+    overflow: scroll;
+
 }
 
 .work-history-container { 
