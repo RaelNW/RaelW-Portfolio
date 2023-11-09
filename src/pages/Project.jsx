@@ -1,6 +1,6 @@
 import React from 'react';
 import foxGiven from '/images/No-Fox-Given.jpg';
-import passwordGenerator from '/images/PasswordGenerator.png';
+import passwordGenerator from '/images/passwordGenerator.jpg';
 import pwaTextEditor from '/images/PWA-TextEditor.png';
 import noteTaker from '/images/noteTaker.png';
 import weatherDashboard from '/images/weatherDashboard.jpg';
